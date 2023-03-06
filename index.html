@@ -1,41 +1,27 @@
-<!--Jordan Schulte-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=no, user-scalable=0">
-    <title>To-do list</title>
-    <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <!--SCRIPTS-->
-    <script src="https://kit.fontawesome.com/58b34f234f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="noti-added">
-        <p>To-do has been <span class="green-color">added</span>.</p>
+    <h1><span class="heading">TODO</span> List</h1>
+    <div class="input_div">
+        <input type="text" class="input" placeholder="What do you want to do...">
+        <button class="addButton"><i class="fas fa-plus"></i></button>
     </div>
-    <div class="noti-removed">
-        <p>To-do has been <span class="red-color">removed</span>.</p>
+
+    <div class="container">
+       <!--  <div class="item">
+            <input type="text" class="item_input"  disabled>
+            <button class = "editButton">Edit</button>
+            <button class="removeButton">Remove</button>
+        </div> -->
     </div>
-    <div class="noti-loaded">
-        <p>To-do's have been <span class="accent-color">loaded</span>.</p>
-    </div>
-    <div class="wrapper">
-        <h1>To-do List</h1>
-        <div class="wrapper-form">
-            <form>
-                <input type="text" placeholder="Add a To-do" id="user-input">
-                <button type="submit" id="add-btn">ADD</button>
-            </form>
-        </div>
-        <div class="wrapper-todo">
-            <ul class="todo-list">
-            </ul>
-        </div>
-    </div>
-    <!--JAVASCRIPT-->
-    <script src="JavaScript/index.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
 </body>
 </html>
