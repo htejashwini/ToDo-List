@@ -1,53 +1,41 @@
+<!--Jordan Schulte-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TODO LIST</title>
-
-	<link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=no, user-scalable=0">
+    <title>To-do list</title>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--SCRIPTS-->
+    <script src="https://kit.fontawesome.com/58b34f234f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-	
-	<header>
-		<h1><u>TODO LIST</u></h1>
-		<form id="new-todo-form">
-			<input 
-				type="text" 
-				name="new-todo-input" 
-				id="new-todo-input" 
-				placeholder="What do you have planned?" />
-			<input 
-				type="submit"
-				id="new-todo-submit" 
-				value="Add todo" />
-		</form>
-	</header>
-	<main>
-		<section class="todo-list">
-			<h2>ToDo</h2>
-
-			<div id="todo">
-
-				<!-- <div class="todo">
-					<div class="content">
-						<input 
-							type="text" 
-							class="text" 
-							value="A new todo"
-							readonly>
-					</div>
-					<div class="actions">
-						<button class="edit">Edit</button>
-						<button class="delete">Delete</button>
-					</div>
-				</div> -->
-
-			</div>
-		</section>
-	</main>
-
-	<script src="main.js"></script>
+    <div class="noti-added">
+        <p>To-do has been <span class="green-color">added</span>.</p>
+    </div>
+    <div class="noti-removed">
+        <p>To-do has been <span class="red-color">removed</span>.</p>
+    </div>
+    <div class="noti-loaded">
+        <p>To-do's have been <span class="accent-color">loaded</span>.</p>
+    </div>
+    <div class="wrapper">
+        <h1>To-do List</h1>
+        <div class="wrapper-form">
+            <form>
+                <input type="text" placeholder="Add a To-do" id="user-input">
+                <button type="submit" id="add-btn">ADD</button>
+            </form>
+        </div>
+        <div class="wrapper-todo">
+            <ul class="todo-list">
+            </ul>
+        </div>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="JavaScript/index.js"></script>
 </body>
 </html>
